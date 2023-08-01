@@ -103,7 +103,7 @@ class FlipkartPage extends page{
                 await this.timeout()
 
                 try {
-                    var highestPrice =  +await this.firstPrice.getText()
+                    var highestPrice =  await this.firstPrice.getText()
                     
                 } catch (error) {
                     var highestPrice = await this.dumPrice.getText()
